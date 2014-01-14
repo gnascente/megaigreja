@@ -1,4 +1,4 @@
-var app = angular.module('myApp', ['ngRoute']);
+var app = angular.module('myApp', ['ngRoute', 'ngAnimate', 'ngTouch']);
 
 
 app.config(function ($routeProvider) {
@@ -6,7 +6,14 @@ app.config(function ($routeProvider) {
     .when('/', {
       templateUrl: 'partials/Mensagem.html',
       controller: 'MainCtrl'
-    }).otherwise({
+    })
+	.when('/mensagem/:mensagemId', {
+      templateUrl: 'partials/MensagemDetails.html',
+      controller: 'MensagemDetailsCtrl'
+    })
+	.otherwise({
       redirectTo: '/'
     });
 });
+
+
