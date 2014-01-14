@@ -1,0 +1,29 @@
+.welcome {
+  line-height: 1.5;
+  color: #555;
+}
+
+
+#listaDeMensagens li{ 
+	min-height: 70px;
+}
+
+#listaDeMensagens img{ 
+	float: left;
+	margin-right: 10px;
+	width: 72px;
+	heigth: 72px;
+
+}
+#listaDeMensagens li h1, #listaDeMensagens li h2, #listaDeMensagens li h3, #listaDeMensagens li h4, #listaDeMensagens li h5, #listaDeMensagens li p {
+	white-space:nowrap; 
+	overflow:hidden; 
+	text-overflow:ellipsis;
+}
+
+#listaDeMensagens li span.count-main{
+	position: relative;
+	margin: 0px;
+	margin-left: 10px;
+	margin-top: 10px;
+}
